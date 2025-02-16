@@ -29,7 +29,6 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 - **Définir un constructeur** :  
   Si vous souhaitez que le programme ne génère rien dans le constructeur :  
   `NomClasse: _`  
-  (Note : La fonctionnalité d'initialisation des variables dans le constructeur n'est pas encore développée.)
 
   Si vous souhaitez que le programme génère un constructeur qui initialise toutes les variables :  
   `NomClasse: *`  
