@@ -45,6 +45,9 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   Le programme génère automatiquement la méthode `set` avec le paramètre approprié :  
   `+ setNomVariable: typeDeRetour`
 
+- **Définir une méthode `toString`**:
+  Le programme génère automatiquement la méthode `toString` avec le bon retour, et l'annotation @Override :
+  `+ toString: String`
 ### Fonctionnalités automatiques
 
 - Le programme détecte automatiquement si certaines variables nécessitent des imports spécifiques. Par exemple, si une variable est de type `ArrayList`, l'extension ajoutera l'import nécessaire en haut du fichier Java.
