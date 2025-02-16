@@ -21,27 +21,30 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 
 #### Exemple de syntaxe :
 - **Définir une classe** :  
-`NomClasse {`
+  `NomClasse {`
 
 - **Définir un attribut** :  
-`nomVariable: type`
+  `nomVariable: type`
 
 - **Définir un constructeur** :  
-Si vous souhaitez que le programme ne génère rien dans le constructeur :  
-`NomClasse: _`
+  Si vous souhaitez que le programme ne génère rien dans le constructeur :  
+  `NomClasse: _`  
+  (Note : La fonctionnalité d'initialisation des variables dans le constructeur n'est pas encore développée.)
 
-(Note : La fonctionnalité d'initialisation des variables dans le constructeur n'est pas encore développée.)
+  Si vous souhaitez que le programme génère un constructeur qui initialise toutes les variables :  
+  `NomClasse: *`  
+  (Le programme générera automatiquement un constructeur avec toutes les variables comme paramètres et les initialisera dans le corps du constructeur.)
+
 - **Définir une méthode** :  
-`nomMethode: typeDeRetour`
+  `nomMethode: typeDeRetour`
 
 - **Définir une méthode `get`** :  
-Le programme génère automatiquement la méthode `get` avec le retour de la variable correspondante :  
-`getNomVariable: typeDeRetour`
+  Le programme génère automatiquement la méthode `get` avec le retour de la variable correspondante :  
+  `getNomVariable: typeDeRetour`
 
 - **Définir une méthode `set`** :  
-Le programme génère automatiquement la méthode `set` avec le paramètre approprié :  
-`+ setNomVariable: typeDeRetour`
-
+  Le programme génère automatiquement la méthode `set` avec le paramètre approprié :  
+  `+ setNomVariable: typeDeRetour`
 
 ### Fonctionnalités automatiques
 
