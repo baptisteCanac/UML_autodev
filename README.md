@@ -53,6 +53,10 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 
 Si vous souhaitez gagner du temps, vous pouvez modifier le chemin de votre fichier UML (`UML.txt`) directement dans le fichier `OpenUmlFile.java` à la ligne 29.
 
+## Contributions et questions
+
+Je suis ouvert à toute modification, suggestion ou amélioration de cette extension. N'hésitez pas à proposer des idées ou à soumettre des pull requests !
+
 ## Licence
 
 Ce projet est sous licence **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
