@@ -46,7 +46,7 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   `+ setNomVariable: typeDeRetour`
 
 - **Définir une méthode `toString`**:
-  Le programme génère automatiquement la méthode `toString` avec le bon retour, et l'annotation @Override :
+  Le programme génère automatiquement la méthode `toString` avec le bon retour, et l'annotation @Override :  
   `+ toString: String`
 ### Fonctionnalités automatiques
 
