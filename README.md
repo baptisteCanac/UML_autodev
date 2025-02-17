@@ -51,6 +51,13 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 ### Fonctionnalités automatiques
 
 - Le programme détecte automatiquement si certaines variables nécessitent des imports spécifiques. Par exemple, si une variable est de type `ArrayList`, l'extension ajoutera l'import nécessaire en haut du fichier Java.
+  
+    (Ne fonctionne qu'avec ArrayList et HashMap pour le moment)
+- **Génération automatique de la Javadoc** :  
+  UML_autodev génère automatiquement une **Javadoc personnalisée** pour :
+  - Les **constructeurs**, avec le bon `@param` pour chaque variable initialisée.
+  - Les **getters**, incluant le `@return` correspondant.
+  - Les **setters**, documentant le paramètre avec `@param`.
 
 ## Configuration
 
