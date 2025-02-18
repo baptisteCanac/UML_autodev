@@ -24,7 +24,12 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   `NomClasse {`
 
 - **Définir un attribut** :  
-  `- nomVariable: type`
+  `- nomVariable: type`  
+
+  - Par défaut, une variable est générée avec le modificateur `private`.  
+  - Pour définir une visibilité spécifique, ajoutez un préfixe :  
+    - `-_ nomVariable: type` → `public type nomVariable;`  
+    - `-__ nomVariable: type` → `protected type nomVariable;`  
 
 - **Définir un constructeur** :  
   Si vous souhaitez que le programme ne génère rien dans le constructeur :  
@@ -35,7 +40,13 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   (Le programme générera automatiquement un constructeur avec toutes les variables comme paramètres et les initialisera dans le corps du constructeur.)
 
 - **Définir une méthode** :  
-  `+ nomMethode: typeDeRetour`
+  `+ nomMethode: typeDeRetour`  
+
+  - Par défaut, une méthode est générée avec le modificateur `public`.  
+  - Pour définir une visibilité spécifique, ajoutez un préfixe :  
+    - `+__ nomMethode: typeDeRetour` → `protected typeDeRetour nomMethode();`  
+    - `+___ nomMethode: typeDeRetour` → `private typeDeRetour nomMethode();`  
+
 
 - **Définir une méthode `get`** :  
   Le programme génère automatiquement la méthode `get` avec le retour de la variable correspondante :  
