@@ -24,22 +24,22 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   `NomClasse {`
 
 - **Définir un attribut** :  
-  `nomVariable: type`
+  `- nomVariable: type`
 
 - **Définir un constructeur** :  
   Si vous souhaitez que le programme ne génère rien dans le constructeur :  
-  `NomClasse: _`  
+  `+ NomClasse: _`  
 
   Si vous souhaitez que le programme génère un constructeur qui initialise toutes les variables :  
-  `NomClasse: *`  
+  `+ NomClasse: *`  
   (Le programme générera automatiquement un constructeur avec toutes les variables comme paramètres et les initialisera dans le corps du constructeur.)
 
 - **Définir une méthode** :  
-  `nomMethode: typeDeRetour`
+  `+ nomMethode: typeDeRetour`
 
 - **Définir une méthode `get`** :  
   Le programme génère automatiquement la méthode `get` avec le retour de la variable correspondante :  
-  `getNomVariable: typeDeRetour`
+  `+ getNomVariable: typeDeRetour`
 
 - **Définir une méthode `set`** :  
   Le programme génère automatiquement la méthode `set` avec le paramètre approprié :  
@@ -48,7 +48,7 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 - **Définir une méthode `toString`**:
   Le programme génère automatiquement la méthode `toString` avec le bon retour, et l'annotation @Override :  
   `+ toString: String`
-### Fonctionnalités automatiques
+### Automatisations et gestion des erreurs
 
 - Le programme détecte automatiquement si certaines variables nécessitent des imports spécifiques. Par exemple, si une variable est de type `ArrayList`, l'extension ajoutera l'import nécessaire en haut du fichier Java.
   
@@ -58,6 +58,15 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
   - Les **constructeurs**, avec le bon `@param` pour chaque variable initialisée.
   - Les **getters**, incluant le `@return` correspondant.
   - Les **setters**, documentant le paramètre avec `@param`.
+
+- **Gestion des erreurs**
+
+    Le programme détecte et corrige certaines erreurs courantes pour assurer un fonctionnement fluide :
+  - **Correction des déclarations incorrectes** : Si une définition de variable ou de méthode ne commence pas par + ou -, elle est automatiquement transformée en variable.
+
+  - Pop-ups d'information : Lorsqu'une correction automatique est appliquée, une petite fenêtre s'affiche pour informer l'utilisateur de l'erreur détectée et de la correction effectuée. Cependant, le processus continuera apres avoir cliqué sur 'ok' et la génération du code fonctionnera normalement.
+
+  - Débogage automatique en développement : Certaines erreurs sont corrigées automatiquement, mais le système est encore en amélioration pour gérer un plus large éventail de cas.
 
 ## Configuration
 
