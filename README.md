@@ -59,6 +59,95 @@ Créez un fichier `UML.txt` dans le répertoire de votre projet et écrivez-le s
 - **Définir une méthode `toString`**:
   Le programme génère automatiquement la méthode `toString` avec le bon retour, et l'annotation @Override :  
   `+ toString: String`
+
+## Exemple de fichier UML
+```
+Utilisateur{
+-_ prenom: String  
+- nom: String
+- cb: Integer
+- tel: int
++ Utilisateur: *
++___ Utilisateur: _
++ getPrenom: String
++ setPrenom: void
++ getNom: String
++___ setCb: void
+}
+```
+
+### Resultat en code Java
+```java
+public class Utilisateur{
+	public String prenom;
+	private String nom;
+	private Integer cb;
+	private int tel;
+
+	/**
+	  * Constructor of the class Utilisateur
+	  *
+	  * @param prenom
+	  * @param nom
+	  * @param cb
+	  * @param tel
+	  */
+	public Utilisateur(String prenom, String nom, Integer cb, int tel){
+		this.prenom = prenom;
+		this.nom = nom;
+		this.cb = cb;
+		this.tel = tel;
+	}
+
+
+
+	/**
+	  * Constructor of the class Utilisateur
+	  *
+	  */
+	public Utilisateur(){
+		//constructor code
+	}
+
+
+	/**
+	  * Returns variable: prenom
+	  *
+	  * @return prenom
+	  */
+	public String getPrenom(){
+		return this.prenom;
+	}
+
+
+	/**
+	  * définit/redéfinit la variableprenom
+	  *
+	  * @param prenom
+	  */
+	public void setPrenom(String prenom){
+		this.prenom = prenom;
+	}
+
+
+	/**
+	  * Returns variable: nom
+	  *
+	  * @return nom
+	  */
+	public String getNom(){
+		return this.nom;
+	}
+
+	private void setCb(){
+		//your code
+	}
+
+
+
+
+```
+
 ### Automatisations et gestion des erreurs
 
 - Le programme détecte automatiquement si certaines variables nécessitent des imports spécifiques. Par exemple, si une variable est de type `ArrayList`, l'extension ajoutera l'import nécessaire en haut du fichier Java.
