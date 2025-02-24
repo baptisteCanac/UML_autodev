@@ -168,6 +168,12 @@ public class Utilisateur{
 
   - Débogage automatique en développement : Certaines erreurs sont corrigées automatiquement, mais le système est encore en amélioration pour gérer un plus large éventail de cas.
 
+## Comment la faire fonctionner
+
+Dans netbeans cliquez sur `tools` -> `plugins`;
+Cliquez sur `downloaded` puis sur `Add Plugins...` ensuite sélectionnez le fichier .nbm de ce projet.
+Le reste des fichiers de ce code n'est utile que pour les développeurs souhaitant contribuer
+
 ## Configuration
 
 Si vous souhaitez gagner du temps, vous pouvez modifier le chemin de votre fichier UML (`UML.txt`) directement dans le fichier `OpenUmlFile.java` à la ligne 29.
